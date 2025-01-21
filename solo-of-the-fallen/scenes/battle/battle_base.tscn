@@ -1,0 +1,15 @@
+[gd_scene load_steps=4 format=3 uid="uid://p7nxpro8bf2p"]
+
+[ext_resource type="Script" path="res://scripts/battle/battle_base.gd" id="1_123yq"]
+[ext_resource type="PackedScene" uid="uid://dx46qwfuen1jv" path="res://scenes/battle/notes/note_manager.tscn" id="2_6rh61"]
+[ext_resource type="PackedScene" uid="uid://8not5a4r0lik" path="res://scenes/battle/controller_player.tscn" id="3_if5ie"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_123yq")
+
+[node name="Note manager" parent="." instance=ExtResource("2_6rh61")]
+
+[node name="Node3D" parent="." instance=ExtResource("3_if5ie")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0279722, 1.78294, 3.53624)

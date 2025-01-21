@@ -1,0 +1,7 @@
+[gd_scene load_steps=3 format=3 uid="uid://qlxceiau0jhr"]
+
+[ext_resource type="PackedScene" uid="uid://f0bi1xukeogo" path="res://scenes/battle/buttons/button_player.tscn" id="1_bbxud"]
+[ext_resource type="Script" path="res://scripts/battle/buttons/button_right.gd" id="2_gfd2q"]
+
+[node name="Node3D" instance=ExtResource("1_bbxud")]
+script = ExtResource("2_gfd2q")

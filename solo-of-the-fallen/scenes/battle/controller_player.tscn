@@ -1,0 +1,17 @@
+[gd_scene load_steps=5 format=3 uid="uid://8not5a4r0lik"]
+
+[ext_resource type="Script" path="res://scripts/battle/controller_player.gd" id="1_q4qxj"]
+[ext_resource type="PackedScene" uid="uid://cfmaexrob2llp" path="res://scenes/battle/buttons/button_left.tscn" id="2_12xmj"]
+[ext_resource type="PackedScene" uid="uid://qlxceiau0jhr" path="res://scenes/battle/buttons/button_right.tscn" id="3_2js62"]
+[ext_resource type="PackedScene" uid="uid://cwrseyoushnt2" path="res://scenes/battle/buttons/button_mid.tscn" id="4_y2xkk"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_q4qxj")
+
+[node name="button_left" parent="." instance=ExtResource("2_12xmj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="button_mid" parent="." instance=ExtResource("4_y2xkk")]
+
+[node name="button_right" parent="." instance=ExtResource("3_2js62")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)

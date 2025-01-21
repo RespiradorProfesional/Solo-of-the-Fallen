@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://dx46qwfuen1jv"]
+
+[ext_resource type="Script" path="res://scripts/battle/notes/note_manager.gd" id="1_8uvfx"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_8uvfx")
+
+[node name="position_left" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="position_mid" type="Marker3D" parent="."]
+
+[node name="position_right" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
