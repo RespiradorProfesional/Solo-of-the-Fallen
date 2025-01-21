@@ -12,3 +12,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
 
 [node name="position_right" type="Marker3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="note_container" type="Node3D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 951.789
