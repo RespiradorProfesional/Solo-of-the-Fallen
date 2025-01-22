@@ -16,4 +16,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
 [node name="note_container" type="Node3D" parent="."]
 
 [node name="Timer" type="Timer" parent="."]
-wait_time = 951.789
+wait_time = 4096.0
+
+[node name="target_left" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, -2, 0, 10)
+
+[node name="target_mid" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 0, 0, 10)
+
+[node name="target_right" type="Marker3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.965926, 0.258819, 0, -0.258819, 0.965926, 2, 0, 10)

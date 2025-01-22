@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://bvvthre6g5hor"]
+[gd_scene load_steps=3 format=3 uid="uid://bvvthre6g5hor"]
 
 [ext_resource type="Script" path="res://create_song/create_song.gd" id="1_p1rj4"]
+[ext_resource type="AudioStream" uid="uid://bugpbfseq7tie" path="res://assets/music/level_music/IGUALES - Quevedo (Visualizer) BUENAS NOCHES.mp3" id="2_cc7o0"]
 
 [node name="CreateSong" type="Node3D"]
 script = ExtResource("1_p1rj4")
@@ -8,3 +9,7 @@ script = ExtResource("1_p1rj4")
 [node name="Timer" type="Timer" parent="."]
 wait_time = 4096.0
 autostart = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_cc7o0")
+autoplay = true
