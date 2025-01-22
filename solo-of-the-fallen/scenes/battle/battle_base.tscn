@@ -11,7 +11,6 @@ script = ExtResource("1_123yq")
 
 [node name="Note manager" parent="." instance=ExtResource("2_6rh61")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.83536)
-time_travel = 0.5
 
 [node name="Node3D" parent="." instance=ExtResource("3_if5ie")]
 
