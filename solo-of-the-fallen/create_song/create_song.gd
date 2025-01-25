@@ -11,28 +11,16 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Input.is_action_just_pressed("left_carril_Q"):
 		create_point("Q","pressed")
-	if Input.is_action_just_pressed("left_carril_A"):
-		create_point("A","pressed")
 	if Input.is_action_just_released("left_carril_Q"):
 		create_point("Q","relased")
-	if Input.is_action_just_released("left_carril_A"):
-		create_point("A","relased")
 	if Input.is_action_just_pressed("right_carril_E"):
 		create_point("E","pressed")
-	if Input.is_action_just_pressed("right_carril_D"):
-		create_point("D","pressed")
 	if Input.is_action_just_released("right_carril_E"):
 		create_point("E","relased")
-	if Input.is_action_just_released("right_carril_D"):
-		create_point("D","relased")
 	if Input.is_action_just_pressed("mid_carril_W"):
 		create_point("W","pressed")
-	if Input.is_action_just_pressed("mid_carril_S"):
-		create_point("S","pressed")
 	if Input.is_action_just_released("mid_carril_W"):
 		create_point("W","relased")
-	if Input.is_action_just_released("mid_carril_S"):
-		create_point("S","relased")
 	
 	if Input.is_action_just_pressed("test"):
 		# Crear o abrir un archivo para escritura

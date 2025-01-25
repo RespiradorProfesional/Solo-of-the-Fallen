@@ -58,12 +58,6 @@ func create_note(key):
 			setting_note(note,"W",position_mid.global_position,target_mid.global_position)
 		"E":
 			setting_note(note,"E",position_right.global_position,target_right.global_position)
-		"A":
-			setting_note(note,"A",position_left.global_position,target_left.global_position)
-		"S":
-			setting_note(note,"S",position_mid.global_position,target_mid.global_position)
-		"D":
-			setting_note(note,"D",position_right.global_position,target_right.global_position)
 
 func setting_note(note,key_node,position_node,target_position):
 	note_container.add_child(note)

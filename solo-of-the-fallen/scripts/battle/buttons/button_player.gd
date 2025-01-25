@@ -7,16 +7,9 @@ class_name Button_base
 func _ready() -> void:
 	area.monitoring = false
 
-func activate(action):
+func activate():
 	area.monitoring = true
-	if action == 1:
-		pass
-	else : 
-		pass
 
-func deactivate(action):
+
+func deactivate():
 	area.monitoring = false
-	if action == 1:
-		pass
-	else : 
-		pass
