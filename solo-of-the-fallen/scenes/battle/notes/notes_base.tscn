@@ -1,8 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://3nho1w078ves"]
+[gd_scene load_steps=4 format=3 uid="uid://3nho1w078ves"]
 
 [ext_resource type="Script" path="res://scripts/battle/notes/notes_base.gd" id="1_6f4ky"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_ltouk"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_tdw0k"]
+size = Vector3(1, 0.514404, 0.890259)
 
 [node name="Notes" type="Node3D"]
 script = ExtResource("1_6f4ky")
@@ -10,3 +13,9 @@ script = ExtResource("1_6f4ky")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="."]
 transform = Transform3D(1.05569, 0, 0, 0, 0.517017, 0, 0, 0, 0.890534, 0, 0, 0)
 mesh = SubResource("BoxMesh_ltouk")
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.00012207, 0.00469971)
+shape = SubResource("BoxShape3D_tdw0k")

@@ -24,7 +24,7 @@ func _process(delta: float) -> void:
 	
 	if Input.is_action_just_pressed("test"):
 		# Crear o abrir un archivo para escritura
-		var file = FileAccess.open("res://mr_moondal.txt", FileAccess.WRITE)
+		var file = FileAccess.open("res://cancion_nueva.txt", FileAccess.WRITE)
 		
 		if file:
 			# Escribir contenido en el archivo

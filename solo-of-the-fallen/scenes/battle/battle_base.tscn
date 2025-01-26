@@ -13,9 +13,10 @@ script = ExtResource("1_123yq")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -9.83536)
 
 [node name="Node3D" parent="." instance=ExtResource("3_if5ie")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
 [node name="Camera3D" type="Camera3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0279722, 1.78294, 3.53624)
+transform = Transform3D(1, 0, 0, 0, 0.975673, 0.219233, 0, -0.219233, 0.975673, -0.0279722, 2.18838, 5.10724)
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("4_ldrno")

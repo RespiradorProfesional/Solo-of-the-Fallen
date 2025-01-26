@@ -1,4 +1,5 @@
 extends Node3D
+class_name note
 
 var key_note
 # Velocidad de movimiento en unidades por segundo

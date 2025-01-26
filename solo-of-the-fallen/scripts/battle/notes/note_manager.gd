@@ -27,11 +27,12 @@ var current_index = 0
 
 func _ready():
 	# Ruta del archivo
-	var file_path = "res://mr_moondal.txt"
+	var file_path = "res://song/mr_moondal.txt"
 
 	# Leer y procesar el archivo
 	var file_content = load_file_as_text(file_path)
 	if file_content != null:
+		print("El archivo fue encontrado: ", file_path)
 		process_commands(file_content)
 	for time_click in note_time_click:
 		time_respawn.append(time_click-time_travel)
@@ -39,7 +40,6 @@ func _ready():
 
 func _process(delta: float) -> void:
 	var current_time =timer.wait_time - timer.time_left
-	print(current_time)
 	# Verificar si el tiempo actual coincide con el próximo valor en el array
 	while current_index < time_respawn.size() and current_time >= time_respawn[current_index]:
 		create_note(note_key[current_index])
@@ -65,7 +65,6 @@ func setting_note(note,key_node,position_node,target_position):
 	note.key_note = key_node
 	# Configurar posición inicial y velocidad
 	note.set_target(target_position, time_travel)
-	
 
 
 

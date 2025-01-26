@@ -5,3 +5,9 @@
 
 [node name="Node3D" instance=ExtResource("1_71xoa")]
 script = ExtResource("2_wclx7")
+
+[node name="CollisionShape3D" parent="Area3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="MeshInstance3D" parent="." index="2"]
+transform = Transform3D(0.571528, 0, 0, 0, 0.491423, 0, 0, 0, 0.331205, 0, 0, 0)

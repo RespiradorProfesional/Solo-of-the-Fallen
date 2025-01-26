@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=3 uid="uid://f0bi1xukeogo"]
+[gd_scene load_steps=4 format=3 uid="uid://f0bi1xukeogo"]
 
 [ext_resource type="Script" path="res://scripts/battle/buttons/button_player.gd" id="1_7er6g"]
 
-[sub_resource type="SphereShape3D" id="SphereShape3D_pppk3"]
-radius = 0.865055
+[sub_resource type="BoxShape3D" id="BoxShape3D_2sfdy"]
+size = Vector3(0.632553, 0.219482, 1.1069)
+
+[sub_resource type="SphereMesh" id="SphereMesh_ore2o"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_7er6g")
@@ -11,4 +13,16 @@ script = ExtResource("1_7er6g")
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-shape = SubResource("SphereShape3D_pppk3")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.206192)
+shape = SubResource("BoxShape3D_2sfdy")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+one_shot = true
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.571528, 0, 0, 0, 0.491423, 0, 0, 0, 0.331205, 0, 0, 0)
+mesh = SubResource("SphereMesh_ore2o")
+
+[connection signal="area_entered" from="Area3D" to="." method="_on_area_3d_area_entered"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
